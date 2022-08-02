@@ -1,0 +1,127 @@
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-left: 42px;
+    margin-right: 42px;
+
+    &__group {
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+        position: relative;
+
+        &_control {
+            border: 1.5px solid $colorFormInputBorder;
+            border-radius: 25px;
+            width: 100%;
+            padding: 11px 0 5px 0;
+            padding-left: 40px;
+            outline: 0;
+        }
+
+        &_span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: $colorFormTitleInput;
+
+        }
+        
+    }
+
+    &__btn-box {
+        width: 48%;
+        border: 2px solid $colorFormBtnBorder;
+        border-radius: 25px;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 0 7px 0;
+
+        &_bg {
+            background: $colorFormBtn;
+            box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    &__btn-register {
+        color: $colorFormBtn;
+        background: $white;
+        border: none;
+    }
+
+    &__btn-login {
+        color: $white;
+        background: $colorFormBtn;
+        border: none;
+    }
+}
+
+.form-title {
+    margin-top: 125px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+[placeholder] {
+    font-size: 13px;
+}
+
+.checkbox {
+    color: $colorFormChecked;
+    width: 48%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.question {
+    text-align: center;
+    width: 48%;
+    margin-top: 24px;
+    @include e(control){
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: $colorFormCheckedBtn;
+    }
+}
+
+.image {
+    display: none;
+}
+
+[type="text"] {
+    background: url(../../../i/mail.png);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+[type="password"] {
+    background: url(../../../i/key.png);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+[type="submit"]{
+    cursor: pointer;
+}
+.form__group_icon-password::before{
+position: absolute;
+content: url(../../../i/eye.png);
+top: 63%;
+left: 93%;
+}

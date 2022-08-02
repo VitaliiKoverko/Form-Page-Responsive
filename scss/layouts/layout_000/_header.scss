@@ -1,0 +1,33 @@
+.slogan-box{
+    
+    @include e(img){
+        width: 31px;
+        height: 31px;
+        margin-top: 19px;
+    margin-left: 22px;
+    margin-right: 43px;
+    }
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.main-nav{
+    margin-right: 43px;
+    margin-top: 27px;
+    @include e(link){
+        font-size: 12px;
+        letter-spacing: 2.4px;
+        font-weight: bold;
+        text-decoration: none;
+        color: $black;
+    }
+    &__item{
+        margin-bottom: 8px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    
+}

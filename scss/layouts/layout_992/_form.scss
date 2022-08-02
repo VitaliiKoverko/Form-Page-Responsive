@@ -1,0 +1,29 @@
+.form-container {
+margin-top: 64px;
+max-width: 1240px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.form-title{
+    margin-top: 0;
+}
+
+.form{
+    flex-basis: 100%;
+    padding-top: 105px;
+    margin-bottom: 105px;
+}
+
+@media only screen and (min-width: 1182px) {
+    .image{
+        display: block;
+    }
+    .form-container {
+        margin-top: 64px;
+        margin-top: 151px;
+        justify-content: space-between;
+        }
+        
+  }

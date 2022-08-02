@@ -1,0 +1,29 @@
+
+
+*{
+  box-sizing: border-box;
+}
+html {
+  font-size: $baseFontSize;
+  
+}
+body {
+  
+  font-family: $fontFamilyPage;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+::-webkit-input-placeholder {
+  color:#DFE2E6;
+  opacity:1;
+}
